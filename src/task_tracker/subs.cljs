@@ -11,3 +11,8 @@
  ::active-panel
  (fn [db _]
    (:active-panel db)))
+
+(re-frame/reg-sub
+  ::tasks
+  (fn [db _]
+    (:tasks db)))
